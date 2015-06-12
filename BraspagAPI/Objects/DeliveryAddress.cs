@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BraspagMedigitalAPI.Objects
+namespace BraspagAPI.Objects
 {
     public class DeliveryAddress : Address
     {

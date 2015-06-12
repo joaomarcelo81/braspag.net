@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BraspagMedigitalAPI.Objects
+namespace BraspagAPI.Objects
 {
 
     public class Payment
@@ -56,7 +56,7 @@ namespace BraspagMedigitalAPI.Objects
         /// <summary>
         /// Valor do Pedido (ser enviado em centavos)
         /// </summary>
-        public decimal Amount { get; set; }
+        public string Amount { get; set; }
         /// <summary>
         /// Moeda moeda na qual o pagamento será feito (BRL / USD / MXN / COP / CLP / ARS / PEN / EUR / PYN / UYU / VEB / VEF / GBP)
         /// </summary>
@@ -97,23 +97,33 @@ namespace BraspagMedigitalAPI.Objects
         /// URI para onde o usuário será redirecionado após o fim do pagamento
         /// </summary>
         public string ReturnUrl { get; set; }
+        /// <summary>
+        /// Número do Comprovante de Venda
+        /// </summary>
         public string ProofOfSale { get; set; }
+        /// <summary>
+        /// Id da transação na adquirente. 
+        /// </summary>
         public string AcquirerTransactionId { get; set; }
+        /// <summary>
+        /// Código de autorização
+        /// </summary>
         public string AuthorizationCode { get; set; }
-
-
         /// <summary>
         /// Campo Identificador do Pedido
         /// </summary>
         public string PaymentId { get; set; }
-
-
         /// <summary>
         /// Eletronic Commerce Indicator. Representa o quão segura é uma transação
         /// </summary>
         public string ECI { get; set; }
+        /// <summary>
+        /// Total Capturado
+        /// </summary>
         public string CapturedAmount { get; set; }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public string[] ExtraDataCollection { get; set; }
         /// <summary>
         /// Código da razão da Operação
@@ -160,9 +170,21 @@ namespace BraspagMedigitalAPI.Objects
         /// Mensagem de retorno da adquirente
         /// </summary>
         public string ProviderReturnMessage { get; set; }
+        /// <summary>
+        /// Cartão de Credito 
+        /// </summary>
         public CreditCard CreditCard { get; set; }
+        /// <summary>
+        /// Cartão de Debito
+        /// </summary>
+        public DebitCard DebitCard { get; set; }
+        /// <summary>
+        /// Links
+        /// </summary>
         public IList<Link> Links { get; set; }
-
+        /// <summary>
+        /// Recurrent Payment
+        /// </summary>
         public RecurrentPayment RecurrentPayment { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using BraspagMedigitalAPI.Objects;
+﻿using BraspagAPI.Objects;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BraspagMedigitalAPI
+namespace BraspagAPI
 {
 
     /// <summary>
@@ -40,6 +40,7 @@ namespace BraspagMedigitalAPI
         {
             var retorno = (HttpPost(sale, ""));
            var vendaresult = JsonConvert.DeserializeObject<Sale>(retorno);
+            
            return vendaresult;
         }
 
@@ -63,9 +64,11 @@ namespace BraspagMedigitalAPI
         /// <param name="amount"></param>
         /// <param name="serviceTaxAmount"></param>
         /// <returns></returns>
-        public string CapturandoVenda(string PaymentId, string amount, string serviceTaxAmount)
+        public Sale CapturandoSale(string PaymentId, string amount, string serviceTaxAmount)
         {
-            return HttpPut(PaymentId, "capture", amount, serviceTaxAmount);
+             var retorno = HttpRequest(PaymentId, "capture", amount, serviceTaxAmount, "put", "apisandbox");
+             var result = JsonConvert.DeserializeObject<Sale>(retorno);
+             return result;
         }
 
 
@@ -75,10 +78,22 @@ namespace BraspagMedigitalAPI
         /// <param name="PaymentId"></param>
         /// <param name="amount"></param>
         /// <returns></returns>
-        public string CancelarVenda(string PaymentId, string amount)
+        public Sale CancelarSale(string PaymentId, string amount)
         {
-            return HttpPut(PaymentId, "void", amount, null);
+            var retorno = HttpRequest(PaymentId, "void", amount, null, "put", "apisandbox");
+            var result = JsonConvert.DeserializeObject<Sale>(retorno);
+            return result;
         }
+
+
+        public Sale ConsultarSale(string PaymentId)
+        {
+            var retorno = HttpRequest(PaymentId, string.Empty, string.Empty, null, "get", "apiquerysandbox");
+            var result = JsonConvert.DeserializeObject<Sale>(retorno);
+            return result;
+        }
+
+
 
         /// <summary>
         /// 
@@ -88,15 +103,15 @@ namespace BraspagMedigitalAPI
         /// <param name="amount"></param>
         /// <param name="serviceTaxAmount"></param>
         /// <returns></returns>
-        private static string HttpPut(string PaymentId, string method, string amount, string serviceTaxAmount)
+        private static string HttpRequest(string PaymentId, string Command, string amount, string serviceTaxAmount, string method, string urlconection)
         {
-
-            var url = string.Format("https://apisandbox.braspag.com.br/v2/sales/{0}/{1}", PaymentId, method);
+            
+            var url = string.Format("https://" + urlconection + ".braspag.com.br/v2/sales/{0}{1}", PaymentId, (string.IsNullOrWhiteSpace(Command) ? string.Empty : "/" + Command));
 
 
             var request = (HttpWebRequest)WebRequest.Create(url);
 
-            request.Method = "PUT";
+            request.Method = method;//"PUT";
           //  request.Headers.Add("MerchantId", "db0655e8-c002-4981-9254-2056886139e3");
 //            request.Headers.Add("MerchantKey", "QUOKIYZWQXBMGUUTSRXJSSJJKSLJFGJCOXWNNROG");
             request.Headers.Add("MerchantId", _merchantId);
@@ -104,15 +119,22 @@ namespace BraspagMedigitalAPI
             request.Headers.Add("RequestId", Guid.NewGuid().ToString());
             request.ContentType = "application/json";
 
-            var postData = "?amount=" + amount;
-            postData += "%serviceTaxAmount=" + serviceTaxAmount;
 
-            var data = Encoding.ASCII.GetBytes(postData);
-            request.ContentLength = data.Length;
-            using (var stream = request.GetRequestStream())
+            if (!string.IsNullOrWhiteSpace(amount))
             {
-                stream.Write(data, 0, data.Length);
+                var postData = "?";
+                postData += "amount=" + amount;
+                postData += "%serviceTaxAmount=" + serviceTaxAmount;
+                var data = Encoding.ASCII.GetBytes(postData);
+                request.ContentLength = data.Length;
+
+                using (var stream = request.GetRequestStream())
+                {
+                    stream.Write(data, 0, data.Length);
+                }
             }
+
+
 
             var response = (HttpWebResponse)request.GetResponse();
 
@@ -142,7 +164,7 @@ namespace BraspagMedigitalAPI
             request.Headers.Add("RequestId", Guid.NewGuid().ToString());
             request.ContentType = "application/json";
 
-            var postData = JsonConvert.SerializeObject(sale);
+            var postData = JsonConvert.SerializeObject(sale, Formatting.Indented, new JsonSerializerSettings { DefaultValueHandling = DefaultValueHandling.Ignore });
 
             var data = Encoding.ASCII.GetBytes(postData);
 
@@ -161,5 +183,9 @@ namespace BraspagMedigitalAPI
 
         }
 
+
+
+
+        
     }
 }

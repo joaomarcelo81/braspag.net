@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BraspagMedigitalAPI.Objects
+namespace BraspagAPI.Objects
 {
     public class Customer
     {
@@ -12,6 +12,9 @@ namespace BraspagMedigitalAPI.Objects
         /// Nome do Comprador
         /// </summary>
         public string Name { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public string Identity { get; set; }
         /// <summary>
         /// Tipo do documento de identificação do Comprador

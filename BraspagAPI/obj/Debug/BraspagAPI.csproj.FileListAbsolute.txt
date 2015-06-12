@@ -9,6 +9,6 @@ C:\Projetos\braspag.net\BraspagAPI\bin\Debug\BraspagAPI.dll
 C:\Projetos\braspag.net\BraspagAPI\bin\Debug\BraspagAPI.pdb
 C:\Projetos\braspag.net\BraspagAPI\bin\Debug\Newtonsoft.Json.dll
 C:\Projetos\braspag.net\BraspagAPI\bin\Debug\Newtonsoft.Json.xml
-C:\Projetos\braspag.net\BraspagAPI\obj\Debug\BraspagAPI.csprojResolveAssemblyReference.cache
 C:\Projetos\braspag.net\BraspagAPI\obj\Debug\BraspagAPI.dll
 C:\Projetos\braspag.net\BraspagAPI\obj\Debug\BraspagAPI.pdb
+C:\Projetos\braspag.net\BraspagAPI\obj\Debug\BraspagAPI.csprojResolveAssemblyReference.cache

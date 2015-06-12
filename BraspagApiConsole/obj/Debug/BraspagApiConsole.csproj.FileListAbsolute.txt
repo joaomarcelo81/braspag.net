@@ -3,3 +3,12 @@ C:\Projetos\BraspagAPI\BraspagAPI\BraspagApiConsole\obj\Debug\ConsoleApplication
 C:\Projetos\BraspagAPI\BraspagAPI\BraspagApiConsole\obj\Debug\ConsoleApplication3.pdb
 C:\Projetos\BraspagAPI\BraspagAPI\BraspagApiConsole\bin\Debug\BraspagApiConsole.exe.config
 C:\Projetos\braspag.net\BraspagApiConsole\bin\Debug\BraspagApiConsole.exe.config
+C:\Projetos\braspag.net\BraspagApiConsole\bin\Debug\BraspagApiConsole.exe
+C:\Projetos\braspag.net\BraspagApiConsole\bin\Debug\BraspagApiConsole.pdb
+C:\Projetos\braspag.net\BraspagApiConsole\bin\Debug\BraspagAPI.dll
+C:\Projetos\braspag.net\BraspagApiConsole\bin\Debug\Newtonsoft.Json.dll
+C:\Projetos\braspag.net\BraspagApiConsole\bin\Debug\BraspagAPI.pdb
+C:\Projetos\braspag.net\BraspagApiConsole\bin\Debug\Newtonsoft.Json.xml
+C:\Projetos\braspag.net\BraspagApiConsole\obj\Debug\BraspagApiConsole.csprojResolveAssemblyReference.cache
+C:\Projetos\braspag.net\BraspagApiConsole\obj\Debug\BraspagApiConsole.exe
+C:\Projetos\braspag.net\BraspagApiConsole\obj\Debug\BraspagApiConsole.pdb

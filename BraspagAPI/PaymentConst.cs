@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BraspagMedigitalAPI
+namespace BraspagAPI
 {
     public class PaymentConst
     {

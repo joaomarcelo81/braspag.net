@@ -1,6 +1,7 @@
 ﻿
-using BraspagMedigitalAPI;
-using BraspagMedigitalAPI.Objects;
+
+using BraspagAPI;
+using BraspagAPI.Objects;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -30,7 +31,7 @@ namespace ConsoleApplication3
             sale.Payment = new Payment()
             {
                 Type = "CreditCard",
-                Amount = 15700,
+                Amount = "15700",
                 Provider = "Simulado",
                 Installments = "1",
                 CreditCard = new CreditCard()
