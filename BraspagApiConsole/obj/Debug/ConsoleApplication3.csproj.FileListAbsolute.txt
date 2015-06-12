@@ -1,0 +1,10 @@
+C:\Projetos\PortaisCursosCBF\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+C:\Projetos\PortaisCursosCBF\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+C:\Projetos\PortaisCursosCBF\ConsoleApplication3\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+C:\Projetos\PortaisCursosCBF\ConsoleApplication3\ConsoleApplication3\bin\Debug\BraspagMedigitalAPI.dll
+C:\Projetos\PortaisCursosCBF\ConsoleApplication3\ConsoleApplication3\bin\Debug\Newtonsoft.Json.dll
+C:\Projetos\PortaisCursosCBF\ConsoleApplication3\ConsoleApplication3\bin\Debug\BraspagMedigitalAPI.pdb
+C:\Projetos\PortaisCursosCBF\ConsoleApplication3\ConsoleApplication3\bin\Debug\Newtonsoft.Json.xml
+C:\Projetos\PortaisCursosCBF\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache
+C:\Projetos\PortaisCursosCBF\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+C:\Projetos\PortaisCursosCBF\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb

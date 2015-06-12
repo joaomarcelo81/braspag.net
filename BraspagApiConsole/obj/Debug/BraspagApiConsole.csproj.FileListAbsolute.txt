@@ -1,0 +1,5 @@
+C:\Projetos\BraspagAPI\BraspagAPI\BraspagApiConsole\bin\Debug\ConsoleApplication3.exe.config
+C:\Projetos\BraspagAPI\BraspagAPI\BraspagApiConsole\obj\Debug\ConsoleApplication3.exe
+C:\Projetos\BraspagAPI\BraspagAPI\BraspagApiConsole\obj\Debug\ConsoleApplication3.pdb
+C:\Projetos\BraspagAPI\BraspagAPI\BraspagApiConsole\bin\Debug\BraspagApiConsole.exe.config
+C:\Projetos\braspag.net\BraspagApiConsole\bin\Debug\BraspagApiConsole.exe.config

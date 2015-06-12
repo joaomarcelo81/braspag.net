@@ -1,0 +1,19 @@
+﻿@model BraspagMedigitalAPI.Objects.Sale
+
+
+@Html.Raw(Json.Encode(Model));
+
+<div class="row">
+  <div class="col-md-2">      PaymentId</div>
+  <div class="col-md-2">@Model.Payment.PaymentId</div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-2">      Links</div>
+  <div class="col-md-2">@foreach (var item in Model.Payment.Links)
+                        {
+                           <a  href="@item.Href">@item.Href</a><br/>
+                        }</div>
+</div>
+

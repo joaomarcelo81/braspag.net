@@ -1,0 +1,14 @@
+C:\Projetos\PortaisCursosCBF\ConsoleApplication3\BraspagMedigitalAPI\bin\Debug\BraspagMedigitalAPI.dll
+C:\Projetos\PortaisCursosCBF\ConsoleApplication3\BraspagMedigitalAPI\bin\Debug\BraspagMedigitalAPI.pdb
+C:\Projetos\PortaisCursosCBF\ConsoleApplication3\BraspagMedigitalAPI\bin\Debug\Newtonsoft.Json.dll
+C:\Projetos\PortaisCursosCBF\ConsoleApplication3\BraspagMedigitalAPI\bin\Debug\Newtonsoft.Json.xml
+C:\Projetos\PortaisCursosCBF\ConsoleApplication3\BraspagMedigitalAPI\obj\Debug\BraspagMedigitalAPI.csprojResolveAssemblyReference.cache
+C:\Projetos\PortaisCursosCBF\ConsoleApplication3\BraspagMedigitalAPI\obj\Debug\BraspagMedigitalAPI.dll
+C:\Projetos\PortaisCursosCBF\ConsoleApplication3\BraspagMedigitalAPI\obj\Debug\BraspagMedigitalAPI.pdb
+C:\Projetos\BraspagMedigitalAPI\BraspagMedigitalAPI\BraspagMedigitalAPI\bin\Debug\BraspagMedigitalAPI.dll
+C:\Projetos\BraspagMedigitalAPI\BraspagMedigitalAPI\BraspagMedigitalAPI\bin\Debug\BraspagMedigitalAPI.pdb
+C:\Projetos\BraspagMedigitalAPI\BraspagMedigitalAPI\BraspagMedigitalAPI\bin\Debug\Newtonsoft.Json.dll
+C:\Projetos\BraspagMedigitalAPI\BraspagMedigitalAPI\BraspagMedigitalAPI\bin\Debug\Newtonsoft.Json.xml
+C:\Projetos\BraspagMedigitalAPI\BraspagMedigitalAPI\BraspagMedigitalAPI\obj\Debug\BraspagMedigitalAPI.csprojResolveAssemblyReference.cache
+C:\Projetos\BraspagMedigitalAPI\BraspagMedigitalAPI\BraspagMedigitalAPI\obj\Debug\BraspagMedigitalAPI.dll
+C:\Projetos\BraspagMedigitalAPI\BraspagMedigitalAPI\BraspagMedigitalAPI\obj\Debug\BraspagMedigitalAPI.pdb
